@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: brandon-grotesque, verdana, sans-serif;
+    /*background-color: rgba(161, 161, 47, 0.7);*/
+    margin: 20px;
+}
+.text-center{
+   /* background-color: rgb(145, 145, 54);*/
+}
