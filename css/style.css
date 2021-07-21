@@ -4,18 +4,22 @@
 body {
     font-family: brandon-grotesque, sans-serif;
     font-style: normal;
-    padding: 20px;
-    padding-top: 70px;
+    margin: 20px;
+    text-align: left;
+}
+#carouselExampleIndicators{
+  height: 600px;
+  width: 100%;
+  padding: 0%;
+  margin: 0%
 }
 
 .nav1{ 
-    background-color: rgb(145, 145, 54);
-       
+    background-color: rgba(29, 29, 28, 0.85);
+    position: fixed;    
 }
-.market{
-   background-color: rgb(145, 145, 54);
-   color: white;
-}
+
+
 
 .navbar li:hover{
     background-color: rgb(109, 103, 103, 0.3);
@@ -24,39 +28,55 @@ body {
     color: white;
 
 }
+
+.navbar li{
+  
+  color:black;
+
+}
 nav a img {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
+}
+#mission{
+  text-align: center;
+}
+.market{
+  text-transform: inherit;
+  background-color: hsla(0, 0%, 0%, 75%);
 }
 .d-block{
     height: 400px;
     width: 100%;
 }
 
-.feature li{
-    /*text-transform: lowercase;*/
-}
-#about, #testimony {
-    background-color: rgb(145, 145, 54);
+
+#testimony, #features,  {
+    background-color: black;
     color: white;
     text-align: center;
 }
-
-
-
+#about {
+  background-color: rgb(145, 145, 54);
+  color: white;
+  align-content: center;
+}
+footer {
+  float: right;
+}
 
 
 
 
 .fa {
     padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 12px;
+    border-radius: 6px;
   }
   
   .fa:hover {
@@ -92,3 +112,26 @@ nav a img {
     background: #125688;
     color: white;
   }
+  .header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: rgb(15, 8, 8);
+    background-color: rgba(7, 7, 7, 0.45);
+
+    @media (max-width: 600px){
+      #carouselExampleIndicators{
+        height: 400px;
+        width: 100%;
+      }
+      nav a img {
+        height: 60px;
+        width: 60px;
+      }
+      
+    }
+
+ 
+      
