@@ -12,7 +12,6 @@ terms.addEventListener('click', function(e) {
         document.getElementById("iframe").src = document.getElementById("iframe").src;
     } else {
         
-        termsConditions.style.display = "block";
-        
+        termsConditions.style.display = "block";  
     }
 })

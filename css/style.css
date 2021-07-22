@@ -33,11 +33,6 @@ body {
     color: white;
 }
 
-.nav-link a:active{
-  color: red;
-}
-
-
 nav a img {
     height: 60px;
     width: 60px;
@@ -46,7 +41,6 @@ nav a img {
   text-align: center;
 }
 .market{
-  text-transform: inherit;
   background-color: hsla(0, 0%, 0%, 75%);
 }
 .d-block{
@@ -63,15 +57,50 @@ nav a img {
 #about {
   background-color: rgb(145, 145, 54);
   color: white;
-  align-content: center;
+  
 }
+.img-thumbnail{
+  height: 200px;
+  width: 400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(145, 145, 54, 0.85);
+}
+
+.container-gallery:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 footer {
   float: right;
 }
 
 #terms:hover{
   cursor: pointer;
-  background-color: rgba(145, 145, 54, 0.75);
+  background-color: rgba(145, 145, 54);
 }
 
 
