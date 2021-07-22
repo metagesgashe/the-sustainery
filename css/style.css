@@ -1,22 +1,27 @@
 * {
     box-sizing: border-box;
 }
+[class*="col-"] {
+  width: 100%;
+}
 body {
     font-family: brandon-grotesque, sans-serif;
     font-style: normal;
     margin: 20px;
     text-align: left;
 }
-#carouselExampleIndicators{
-  height: 600px;
+.carousel-item {
+  height: 450px;
   width: 100%;
-  padding: 0%;
-  margin: 0%
+  padding: 0px;
+  margin:0px;
+  
 }
 
 .nav1{ 
     background-color: rgba(29, 29, 28, 0.85);
-    position: fixed;    
+    /*position: sticky;  */
+    margin:0%
 }
 
 
@@ -26,14 +31,13 @@ body {
     border: 2px solid rgb(109, 103, 103, 0.3);
     border-radius: 20px;
     color: white;
-
 }
 
-.navbar li{
-  
-  color:black;
-
+.nav-link a:active{
+  color: red;
 }
+
+
 nav a img {
     height: 60px;
     width: 60px;
@@ -65,7 +69,10 @@ footer {
   float: right;
 }
 
-
+#terms:hover{
+  cursor: pointer;
+  background-color: rgba(145, 145, 54, 0.75);
+}
 
 
 .fa {
@@ -120,18 +127,71 @@ footer {
     width: 96.66666666666666%;
     color: rgb(15, 8, 8);
     background-color: rgba(7, 7, 7, 0.45);
+  }
 
-    @media (max-width: 600px){
-      #carouselExampleIndicators{
-        height: 400px;
-        width: 100%;
-      }
-      nav a img {
-        height: 60px;
-        width: 60px;
-      }
+  @media (max-width: 600px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    #mission img{
+      width: 80px; 
+      height: 80px; 
+      position: relative;
+      left: 20px;
+    }
+    .header-text {
+      position: absolute;
+      top: 10%;
+      left: 1.8%;
+      right: auto;
+      width: 96.66666666666666%;
+      color: rgb(15, 8, 8);
+      background-color: rgba(7, 7, 7, 0.45);
+    }
+    }
+    
+    @media only screen and (min-width: 800px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
       
     }
+    
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    
 
  
       
